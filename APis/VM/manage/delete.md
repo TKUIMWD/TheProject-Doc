@@ -44,6 +44,7 @@ The response may include a `task_id` if the deletion is an asynchronous PVE task
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 ```json
 { "code": 400, "message": "vm_id is required and must be a string", "data": null }
 ```
@@ -51,6 +52,7 @@ The response may include a `task_id` if the deletion is an asynchronous PVE task
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "Access denied: VM not owned by user", "data": null }
 ```
@@ -58,6 +60,7 @@ The response may include a `task_id` if the deletion is an asynchronous PVE task
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "VM not found", "data": null }
 ```
@@ -65,5 +68,6 @@ The response may include a `task_id` if the deletion is an asynchronous PVE task
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

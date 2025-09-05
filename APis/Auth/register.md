@@ -51,6 +51,7 @@ Possible `message` values:
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+
 Possible `message` values:
 * `"Default compute resource plan not available"`
 * `"internal server error"`

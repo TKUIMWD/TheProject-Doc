@@ -20,6 +20,7 @@ POST /api/v1/auth/logout
 **Resp**
 <details>
 <summary><code>200 OK</code> - Logout successful</summary>
+
 This response is returned even if the token was already invalid.
 
 ```json

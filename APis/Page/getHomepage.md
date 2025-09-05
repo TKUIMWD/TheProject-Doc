@@ -15,6 +15,7 @@ GET /
 **Resp**
 <details>
 <summary><code>200 OK</code></summary>
+
 The server responds with the main HTML document of the web application.
 
 **Content-Type**: `text/html`
@@ -36,5 +37,6 @@ The server responds with the main HTML document of the web application.
 
 <details>
 <summary><code>404 Not Found / 500 Internal Server Error</code></summary>
+
 This can occur if the `HomePagePath` environment variable is not configured correctly on the server, or if the file at that path does not exist.
 </details>

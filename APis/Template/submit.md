@@ -37,6 +37,7 @@ POST /api/v1/template/submit
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 ```json
 { "code": 400, "message": "Missing required field: template_id", "data": null }
 ```
@@ -44,6 +45,7 @@ POST /api/v1/template/submit
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "Template not found", "data": null }
 ```
@@ -51,5 +53,6 @@ POST /api/v1/template/submit
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

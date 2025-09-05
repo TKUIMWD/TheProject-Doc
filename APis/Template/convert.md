@@ -41,6 +41,7 @@ POST /api/v1/template/convert
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"Missing required fields: vm_id, ciuser, cipassword, description"`
 * `"CI validation failed: ..."`
@@ -53,6 +54,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "VM not found or you don't have permission to convert this VM", "data": null }
 ```
@@ -60,5 +62,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

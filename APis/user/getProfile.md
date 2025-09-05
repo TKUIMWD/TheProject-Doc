@@ -36,6 +36,7 @@ GET /api/v1/user/getProfile
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+    
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -43,6 +44,7 @@ GET /api/v1/user/getProfile
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "user is not verified", "data": null }
 ```
@@ -50,6 +52,7 @@ GET /api/v1/user/getProfile
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+    
 ```json
 { "code": 500, "message": "Internal server error", "data": null }
 ```

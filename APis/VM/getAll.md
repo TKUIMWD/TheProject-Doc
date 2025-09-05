@@ -44,6 +44,7 @@ GET /api/v1/vm/getAll
 
 <details>
 <summary><code>401 Unauthorized / 403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "Forbidden: requires superadmin role", "data": null }
 ```
@@ -51,6 +52,7 @@ GET /api/v1/vm/getAll
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+    
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

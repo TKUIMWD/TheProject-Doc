@@ -40,6 +40,7 @@ GET /api/v1/pve/getUserLatestTaskStatus
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "No tasks found for the user", "data": null }
 ```
@@ -47,5 +48,6 @@ GET /api/v1/pve/getUserLatestTaskStatus
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

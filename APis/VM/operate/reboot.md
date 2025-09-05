@@ -1,4 +1,5 @@
 ---
+
 title: reboot
 
 ---
@@ -23,8 +24,10 @@ POST /api/v1/vm/operate/reboot
 | `vm_id` | string | **Required.** The MongoDB `_id` of the VM to reboot. |
 
 **Resp**
+
 <details>
 <summary><code>200 OK</code> - VM rebooted successfully</summary>
+    
 ```json
 {
   "code": 200,
@@ -38,6 +41,7 @@ POST /api/v1/vm/operate/reboot
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"VM ID is required"`
 * `"VM must be running to reboot"`
@@ -48,5 +52,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, and `500 Internal Server Error`.
 </details>

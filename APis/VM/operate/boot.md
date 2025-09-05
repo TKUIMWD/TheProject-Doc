@@ -40,6 +40,7 @@ The `upid` can be used to track the task's progress.
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"VM ID is required"`
 * `"VM is already running"`
@@ -50,6 +51,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "You don't have permission to operate this VM", "data": null }
 ```
@@ -57,6 +59,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "VM not found", "data": null }
 ```
@@ -64,5 +67,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

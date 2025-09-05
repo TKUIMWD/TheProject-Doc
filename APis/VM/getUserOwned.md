@@ -44,6 +44,7 @@ The response format is the same as `getAll`, but the list is filtered to the cur
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+    
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -51,6 +52,7 @@ The response format is the same as `getAll`, but the list is filtered to the cur
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+    
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

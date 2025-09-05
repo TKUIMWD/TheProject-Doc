@@ -46,6 +46,7 @@ POST /api/v1/classes/addClassToCourse/:courseId
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 Possible `message` values:
 * `"Invalid course_id format"`
 * `"Missing required fields: class_name, class_subtitle, class_order"`
@@ -61,6 +62,7 @@ Possible `message` values:
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -68,6 +70,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+
 ```json
 { "code": 403, "message": "You are not authorized to add classes to this course", "data": null }
 ```
@@ -75,6 +78,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 ```json
 { "code": 404, "message": "Course not found", "data": null }
 ```
@@ -82,6 +86,7 @@ Possible `message` values:
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

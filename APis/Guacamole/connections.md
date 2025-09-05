@@ -20,6 +20,7 @@ GET /api/v1/guacamole/connections
 **Resp**
 <details>
 <summary><code>200 OK</code></summary>
+
 ```json
 {
   "code": 200,
@@ -44,5 +45,6 @@ GET /api/v1/guacamole/connections
 
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized`, `500 Internal Server Error`, and `503 Service Unavailable`.
 </details>

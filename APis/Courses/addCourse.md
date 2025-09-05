@@ -43,6 +43,7 @@ POST /api/v1/courses/add
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 Possible `message` values:
 * `"Missing required fields: ..."`
 * `"course_name cannot be empty or strings containing security-sensitive characters"` (and other fields)
@@ -56,6 +57,7 @@ Possible `message` values:
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -63,6 +65,7 @@ Possible `message` values:
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+
 Possible `message` values:
 * `"Failed to associate course with user"`
 * `"Failed to create course"`

@@ -20,11 +20,13 @@ GET /api/v1/template/getAccessable
 **Resp**
 <details>
 <summary><code>200 OK</code> - Approved templates fetched successfully</summary>
+    
 The response format is the same as `getAll`, but the list is filtered based on user permissions.
 </details>
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+    
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -32,6 +34,7 @@ The response format is the same as `getAll`, but the list is filtered based on u
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+    
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

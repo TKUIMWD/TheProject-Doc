@@ -38,6 +38,7 @@ POST /api/v1/pve/cleanupTasks
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+    
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -45,6 +46,7 @@ POST /api/v1/pve/cleanupTasks
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+    
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

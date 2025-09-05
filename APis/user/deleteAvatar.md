@@ -20,6 +20,7 @@ DELETE /api/v1/user/deleteAvatar
 **Resp**
 <details>
 <summary><code>200 OK</code> - Avatar deleted successfully</summary>
+    
 ```json
 {
   "code": 200,
@@ -35,6 +36,7 @@ DELETE /api/v1/user/deleteAvatar
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 ```json
 { "code": 400, "message": "no custom avatar to delete", "data": null }
 ```
@@ -42,5 +44,6 @@ DELETE /api/v1/user/deleteAvatar
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized`, `403 Forbidden` (for unverified users), and `500 Internal Server Error`.
 </details>

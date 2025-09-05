@@ -48,6 +48,7 @@ PATCH /api/v1/courses/update/:courseId
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 Possible `message` values:
 * `"Invalid course_id format"`
 * `"Course name cannot be empty..."` (and other fields)
@@ -61,6 +62,7 @@ Possible `message` values:
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -68,6 +70,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+
 ```json
 { "code": 403, "message": "You are not authorized to update this course", "data": null }
 ```
@@ -75,6 +78,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 Possible `message` values:
 * `"Course not found"`
 * `"Course not found during update operation."`
@@ -85,6 +89,7 @@ Possible `message` values:
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

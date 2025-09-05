@@ -52,6 +52,7 @@ POST /api/v1/vm/manage/updateConfig
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"vm_id is required"`
 * `"At least one configuration parameter must be provided..."`
@@ -65,5 +66,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, and `500 Internal Server Error`.
 </details>

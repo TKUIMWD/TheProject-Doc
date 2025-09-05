@@ -53,5 +53,6 @@ GET /api/v1/pve/getUserAllTasksStatus
 
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

@@ -49,6 +49,7 @@ POST /api/v1/vm/manage/createFromTemplate
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"Missing required fields: ..."`
 * `"Invalid VM name: ..."`
@@ -61,6 +62,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "You do not have permission to use this template", "data": null }
 ```
@@ -68,6 +70,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 Possible `message` values:
 * `"Template not found"`
 * `"Compute resource plan not found"`
@@ -78,5 +81,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error` for PVE API or task creation failures.
 </details>

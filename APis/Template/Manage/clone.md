@@ -45,6 +45,7 @@ This response indicates the cloning process has started. The status should be tr
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"Missing required fields: template_id, new_template_name, description"`
 * `"Invalid template name: ..."`
@@ -55,6 +56,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "Source template not found", "data": null }
 ```
@@ -62,5 +64,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401/403 Unauthorized` and `500 Internal Server Error` for PVE API or task creation failures.
 </details>

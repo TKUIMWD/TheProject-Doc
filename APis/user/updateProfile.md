@@ -41,6 +41,7 @@ PUT /api/v1/user/updateProfile
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"missing required field: username"`
 * `"unable to update profile"` (Username is already taken)
@@ -51,5 +52,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

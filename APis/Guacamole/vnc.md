@@ -48,5 +48,6 @@ POST /api/v1/guacamole/vnc
 </details>
 <details>
 <summary>Error Responses</summary>
+
 Supports `400 Bad Request`, `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, and `503 Service Unavailable` similar to the SSH endpoint.
 </details>

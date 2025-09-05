@@ -47,5 +47,6 @@ GET /api/v1/template/getAllSubmittedTemplates
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401/403 Unauthorized` and `500 Internal Server Error`.
 </details>

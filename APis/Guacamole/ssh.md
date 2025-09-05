@@ -50,6 +50,7 @@ POST /api/v1/guacamole/ssh
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 Possible `message` values:
 * `"VM ID is required"`
 * `"VM is not running (current status: stopped)"`
@@ -62,6 +63,7 @@ Possible `message` values:
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+
 ```json
 { "code": 401, "message": "Authentication failed", "data": null }
 ```
@@ -69,6 +71,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+
 ```json
 { "code": 403, "message": "You don't have permission to access this VM", "data": null }
 ```
@@ -76,6 +79,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 ```json
 { "code": 404, "message": "VM not found", "data": null }
 ```
@@ -83,6 +87,7 @@ Possible `message` values:
 
 <details>
 <summary><code>503 Service Unavailable</code></summary>
+
 Possible `message` values:
 * `"Guacamole service is not configured. Please contact administrator to configure the service."`
 * `"Cannot establish SSH connection: ... . Please ensure SSH service is running on the target VM."`

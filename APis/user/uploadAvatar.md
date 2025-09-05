@@ -42,6 +42,7 @@ POST /api/v1/user/uploadAvatar
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"no file uploaded"`
 * `"File too large"` (From multer middleware)
@@ -53,5 +54,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized`, `403 Forbidden` (for unverified users), and `500 Internal Server Error`.
 </details>

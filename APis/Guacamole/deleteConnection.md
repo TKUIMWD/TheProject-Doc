@@ -25,6 +25,7 @@ DELETE /api/v1/guacamole/deleteConnection
 **Resp**
 <details>
 <summary><code>200 OK</code></summary>
+
 ```json
 {
   "code": 200,
@@ -41,6 +42,7 @@ DELETE /api/v1/guacamole/deleteConnection
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 ```json
 { "code": 400, "message": "Connection ID is required", "data": null }
 ```
@@ -48,6 +50,7 @@ DELETE /api/v1/guacamole/deleteConnection
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+
 ```json
 { "code": 403, "message": "You don't have permission to delete this connection", "data": null }
 ```
@@ -55,6 +58,7 @@ DELETE /api/v1/guacamole/deleteConnection
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 ```json
 { "code": 404, "message": "Connection not found", "data": null }
 ```
@@ -62,5 +66,6 @@ DELETE /api/v1/guacamole/deleteConnection
 
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized`, `500 Internal Server Error`, and `503 Service Unavailable`.
 </details>

@@ -43,5 +43,6 @@ GET /api/v1/user/getUserCourses
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized`, `403 Forbidden` (for unverified users), and `500 Internal Server Error`.
 </details>

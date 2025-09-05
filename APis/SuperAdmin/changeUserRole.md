@@ -38,6 +38,7 @@ PUT /api/v1/superadmin/changeUserRole
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"Missing 'userId' field"`
 * `"Invalid or missing 'newRole' field. Can only be 'user' or 'admin'."`
@@ -48,6 +49,7 @@ Possible `message` values:
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+    
 ```json
 { "code": 401, "message": "Unauthorized: Invalid token", "data": null }
 ```
@@ -55,6 +57,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 Possible `message` values:
 * `"Forbidden: requires superadmin role"`
 * `"Cannot change role of a superadmin"`
@@ -65,6 +68,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "Target user not found", "data": null }
 ```
@@ -72,6 +76,7 @@ Possible `message` values:
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+    
 ```json
 { "code": 500, "message": "Internal Server Error: ...", "data": null }
 ```

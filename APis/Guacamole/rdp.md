@@ -50,6 +50,7 @@ POST /api/v1/guacamole/rdp
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 Possible `message` values:
 * `"VM ID is required"`
 * `"Username and password are required for RDP connection"`
@@ -60,5 +61,6 @@ Possible `message` values:
 </details>
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, and `503 Service Unavailable` similar to the SSH endpoint.
 </details>

@@ -47,6 +47,7 @@ POST /api/v1/chapters/addChapterToClass/:classId
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 Possible `message` values:
 * `"Invalid class_id format"`
 * `"Missing required key(s) in request body: ..."`
@@ -60,6 +61,7 @@ Possible `message` values:
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -67,6 +69,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+
 ```json
 { "code": 403, "message": "You are not authorized to add classes to this course", "data": null }
 ```
@@ -74,6 +77,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 Possible `message` values:
 * `"Class not found"`
 * `"Course not found"`
@@ -84,6 +88,7 @@ Possible `message` values:
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

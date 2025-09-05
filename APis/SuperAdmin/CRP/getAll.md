@@ -49,5 +49,6 @@ GET /api/v1/superadmin/crp/getAll
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401/403 Unauthorized` and `500 Internal Server Error`.
 </details>

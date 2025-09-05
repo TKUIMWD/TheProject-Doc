@@ -32,6 +32,7 @@ PATCH /api/v1/classes/update/:classId
 **Resp**
 <details>
 <summary><code>200 OK</code></summary>
+
 ```json
 { "code": 200, "message": "Update class successfully", "data": null }
 ```
@@ -39,6 +40,7 @@ PATCH /api/v1/classes/update/:classId
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 Possible `message` values:
 * `"Invalid class_id format"`
 * `"class_name cannot be empty or strings containing security-sensitive characters"`
@@ -53,6 +55,7 @@ Possible `message` values:
 
 <details>
 <summary><code>401 Unauthorized</code></summary>
+
 ```json
 { "code": 401, "message": "invalid or expired token", "data": null }
 ```
@@ -60,6 +63,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+
 ```json
 { "code": 403, "message": "You are not authorized to update this class", "data": null }
 ```
@@ -67,6 +71,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 Possible `message` values:
 * `"Class not found"`
 * `"Associated course not found"`
@@ -77,6 +82,7 @@ Possible `message` values:
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+
 ```json
 { "code": 500, "message": "Internal Server Error", "data": null }
 ```

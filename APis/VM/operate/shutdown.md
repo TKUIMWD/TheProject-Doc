@@ -39,6 +39,7 @@ POST /api/v1/vm/operate/shutdown
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"VM ID is required"`
 * `"VM is not running"`
@@ -49,5 +50,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized`, `403 Forbidden`, `404 Not Found`, and `500 Internal Server Error`.
 </details>

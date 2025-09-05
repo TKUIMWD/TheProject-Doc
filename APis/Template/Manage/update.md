@@ -44,6 +44,7 @@ POST /api/v1/template/manage/update
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"Missing required field: template_id"`
 * `"Both ciuser and cipassword must be provided and non-empty"`
@@ -55,6 +56,7 @@ Possible `message` values:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 Possible `message` values:
 * `"Access denied: You don't have permission to update this template"`
 * `"Access denied: Only superadmin can modify template public status"`
@@ -65,6 +67,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "Template not found", "data": null }
 ```
@@ -72,5 +75,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error` for PVE API failures.
 </details>

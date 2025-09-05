@@ -50,6 +50,7 @@ POST /api/v1/superadmin/crp/create
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 ```json
 { "code": 400, "message": "Bad Request: Missing required field 'name'", "data": null }
 ```
@@ -57,6 +58,7 @@ POST /api/v1/superadmin/crp/create
 
 <details>
 <summary><code>401 Unauthorized / 403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "Forbidden: requires superadmin role", "data": null }
 ```
@@ -64,6 +66,7 @@ POST /api/v1/superadmin/crp/create
 
 <details>
 <summary><code>409 Conflict</code></summary>
+    
 ```json
 { "code": 409, "message": "Conflict: CRP with name \"Pro\" already exists", "data": null }
 ```
@@ -71,6 +74,7 @@ POST /api/v1/superadmin/crp/create
 
 <details>
 <summary><code>500 Internal Server Error</code></summary>
+    
 ```json
 { "code": 500, "message": "Internal Server Error: ...", "data": null }
 ```

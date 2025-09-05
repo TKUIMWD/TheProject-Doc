@@ -47,6 +47,7 @@ POST /api/v1/pve/getMultipleTasksStatus
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 ```json
 { "code": 400, "message": "task_ids must be a non-empty array", "data": null }
 ```
@@ -54,5 +55,6 @@ POST /api/v1/pve/getMultipleTasksStatus
 
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

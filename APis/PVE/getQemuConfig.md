@@ -54,6 +54,7 @@ The structure of the `data` object varies by user role:
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 ```json
 { "code": 400, "message": "Missing vm_id in query parameters", "data": null }
 ```
@@ -61,6 +62,7 @@ The structure of the `data` object varies by user role:
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+
 Possible `message` values:
 * `"Access denied: VM not owned by user"`
 * `"Invalid role"`
@@ -71,6 +73,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 ```json
 { "code": 404, "message": "VM not found", "data": null }
 ```
@@ -78,5 +81,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

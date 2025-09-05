@@ -37,6 +37,7 @@ DELETE /api/v1/template/manage/delete
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 ```json
 { "code": 400, "message": "Missing required field: template_id", "data": null }
 ```
@@ -44,6 +45,7 @@ DELETE /api/v1/template/manage/delete
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "Access denied: You don't have permission to delete this template", "data": null }
 ```
@@ -51,6 +53,7 @@ DELETE /api/v1/template/manage/delete
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "Template not found", "data": null }
 ```
@@ -58,5 +61,6 @@ DELETE /api/v1/template/manage/delete
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error` for PVE API failures.
 </details>

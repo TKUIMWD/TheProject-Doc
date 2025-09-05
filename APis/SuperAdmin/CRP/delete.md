@@ -37,6 +37,7 @@ DELETE /api/v1/superadmin/crp/delete/:crpId
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "Not Found: CRP not found", "data": null }
 ```
@@ -44,5 +45,6 @@ DELETE /api/v1/superadmin/crp/delete/:crpId
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401/403 Unauthorized` and `500 Internal Server Error`.
 </details>

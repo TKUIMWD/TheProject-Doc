@@ -27,6 +27,7 @@ PUT /api/v1/user/changePassword
 **Resp**
 <details>
 <summary><code>200 OK</code> - Password changed successfully</summary>
+    
 ```json
 { "code": 200, "message": "Password changed successfully", "data": null }
 ```
@@ -34,6 +35,7 @@ PUT /api/v1/user/changePassword
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"missing required fields: ..."`
 * `"newPassword and confirmPassword do not match"`
@@ -46,5 +48,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized`, `403 Forbidden` (for unverified users), and `500 Internal Server Error`.
 </details>

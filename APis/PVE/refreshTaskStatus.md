@@ -44,6 +44,7 @@ POST /api/v1/pve/refreshTaskStatus
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 ```json
 { "code": 400, "message": "task_id is required", "data": null }
 ```
@@ -51,6 +52,7 @@ POST /api/v1/pve/refreshTaskStatus
 
 <details>
 <summary><code>404 Not Found</code></summary>
+
 ```json
 { "code": 404, "message": "Task not found or access denied", "data": null }
 ```
@@ -58,5 +60,6 @@ POST /api/v1/pve/refreshTaskStatus
 
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

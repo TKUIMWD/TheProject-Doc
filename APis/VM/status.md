@@ -45,6 +45,7 @@ The `resourceUsage` object is only included if the VM status is `running`.
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 ```json
 { "code": 400, "message": "VM ID is required", "data": null }
 ```
@@ -52,6 +53,7 @@ The `resourceUsage` object is only included if the VM status is `running`.
 
 <details>
 <summary><code>403 Forbidden</code></summary>
+    
 ```json
 { "code": 403, "message": "You don't have permission to access this VM", "data": null }
 ```
@@ -59,6 +61,7 @@ The `resourceUsage` object is only included if the VM status is `running`.
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 ```json
 { "code": 404, "message": "VM not found", "data": null }
 ```
@@ -66,5 +69,6 @@ The `resourceUsage` object is only included if the VM status is `running`.
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401 Unauthorized` and `500 Internal Server Error`.
 </details>

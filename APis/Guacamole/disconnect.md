@@ -26,6 +26,7 @@ POST /api/v1/guacamole/disconnect
 **Resp**
 <details>
 <summary><code>200 OK</code></summary>
+
 ```json
 {
   "code": 200,
@@ -41,6 +42,7 @@ POST /api/v1/guacamole/disconnect
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+
 ```json
 { "code": 400, "message": "Connection ID is required", "data": null }
 ```
@@ -48,5 +50,6 @@ POST /api/v1/guacamole/disconnect
 
 <details>
 <summary>Other Error Responses</summary>
+
 Also supports `401 Unauthorized`, `500 Internal Server Error`, and `503 Service Unavailable`.
 </details>

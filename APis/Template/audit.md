@@ -27,6 +27,7 @@ POST /api/v1/template/audit
 **Resp**
 <details>
 <summary><code>200 OK</code> - Template audit status updated successfully</summary>
+    
 ```json
 {
   "code": 200,
@@ -38,6 +39,7 @@ POST /api/v1/template/audit
 
 <details>
 <summary><code>400 Bad Request</code></summary>
+    
 Possible `message` values:
 * `"Missing required fields: template_id, status"`
 * `"Invalid status. Must be 'approved' or 'rejected'."`
@@ -48,6 +50,7 @@ Possible `message` values:
 
 <details>
 <summary><code>404 Not Found</code></summary>
+    
 Possible `message` values:
 * `"Submitted template not found"`
 * `"Original template not found for the approved submission"`
@@ -58,5 +61,6 @@ Possible `message` values:
 
 <details>
 <summary>Other Error Responses</summary>
+    
 Also supports `401/403 Unauthorized` and `500 Internal Server Error`.
 </details>
